@@ -14,13 +14,13 @@ class BasicInfo extends React.Component {
   render() {
     return (
       <div>
-        <h3>Log in </h3>
+        <h3>log in </h3>
 
         <form method="post" action="" data="json">
           <p>Name:</p>
           <input type="text" placeholder="enter your name" onChange={(e) => this.props.enterInfo(this, e, 'name')}/>
 
-          <p>Email:</p>
+          <p>email:</p>
           <input type="text" placeholder="enter your email?" onChange={(e) => this.props.enterInfo(this, e, 'email')}/>
 
           <p>Password:</p>
