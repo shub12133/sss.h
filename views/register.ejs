@@ -1,0 +1,26 @@
+<%- include('./partials/header'); -%>
+
+<div class="card w-25 mx-auto shadow">
+    <div class="p-25px">
+        <h1 class="text-center text-uppercase"> Register</h1>
+        <form class="w-100" action="/users/register" method="POST">
+            <div class="form-group">
+                 <input type="text" name="name" class="form-control" placeholder="enter name" >
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="enter email" >
+           </div>
+           <div class="form-group">
+            <input type="password" name="password" class="form-control" placeholder="enter password" >
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary text-uppercase" type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+
+
+<%- include('./partials/footer'); -%>

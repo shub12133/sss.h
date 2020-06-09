@@ -1,0 +1,15 @@
+<%- include('./partials/header'); -%>
+
+<div class="mx-auto w-25">
+<div class="card shadow">
+ <h2 class="text-uppercase text-center">Upload an Image</h2>
+ <form class="text-center" action="/images/upload" method="POST" enctype="multipart/form-data">
+    <input class="form-control" placeholder="enter image name" name="name"> <br>
+    <textarea class="form-control" placeholder="enter description " name="description"></textarea><br>
+    <input class="w-75" type="file" name="myImage" placeholder="upload image"><br><br>
+    <button class="btn btn-primary" type="submit">Upload</button>
+ </form>
+</div>
+</div>
+
+<%- include('./partials/footer'); -%>
